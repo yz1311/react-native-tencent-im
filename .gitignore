@@ -4,3 +4,4 @@ android/.settings
 android/.project
 android/android.iml
 android/local.properties
+/ios/RNTencentIM.xcodeproj/xcuserdata/

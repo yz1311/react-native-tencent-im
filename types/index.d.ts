@@ -1,4 +1,4 @@
-declare module 'rn-bugly' {
+declare module 'rn-tencent-im' {
     /**
      * 设置当前的用户id
      * 精确定位到某个用户的异常

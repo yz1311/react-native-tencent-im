@@ -12,7 +12,7 @@
 		0CCEE68922A214070015C160 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCEE68822A214070015C160 /* libz.tbd */; };
 		0CCEE68B22A214100015C160 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCEE68A22A214100015C160 /* libc++.tbd */; };
 		0CFCD2EE229F78F90067A0F4 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFCD2ED229F78F90067A0F4 /* Bugly.framework */; };
-		B3E7B58A1CC2AC0600A0062D /* RNBugly.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNBugly.m */; };
+		B3E7B58A1CC2AC0600A0062D /* RNTencentIM.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNTencentIM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,9 +33,9 @@
 		0CCEE68822A214070015C160 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0CCEE68A22A214100015C160 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0CFCD2ED229F78F90067A0F4 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
-		134814201AA4EA6300B7C361 /* libRNBugly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBugly.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNBugly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBugly.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNBugly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBugly.m; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNTencentIM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTencentIM.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5881CC2AC0600A0062D /* RNTencentIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTencentIM.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNTencentIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTencentIM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNBugly.a */,
+				134814201AA4EA6300B7C361 /* libRNTencentIM.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,8 +77,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNBugly.h */,
-				B3E7B5891CC2AC0600A0062D /* RNBugly.m */,
+				B3E7B5881CC2AC0600A0062D /* RNTencentIM.h */,
+				B3E7B5891CC2AC0600A0062D /* RNTencentIM.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				0CFCD2EC229F78F90067A0F4 /* Frameworks */,
 			);
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNBugly */ = {
+		58B511DA1A9E6C8500147676 /* RNTencentIM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNBugly" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNTencentIM" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = RNBugly;
+			name = RNTencentIM;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNBugly.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNTencentIM.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNBugly" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNTencentIM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -130,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNBugly */,
+				58B511DA1A9E6C8500147676 /* RNTencentIM */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNBugly.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNTencentIM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNBugly;
+				PRODUCT_NAME = RNTencentIM;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -263,7 +263,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNBugly;
+				PRODUCT_NAME = RNTencentIM;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -271,7 +271,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNBugly" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNTencentIM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -280,7 +280,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNBugly" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNTencentIM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

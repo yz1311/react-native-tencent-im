@@ -3,7 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name         = "RNBugly"
+  s.name         = "RNTencentIM"
   s.version      = package['version']
   s.summary      = package['description']
   s.license      = package['license']
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'Bugly','~>2.5.90'
+  s.dependency 'TXIMSDK_Plus_iOS','~>5.5.897'
 end

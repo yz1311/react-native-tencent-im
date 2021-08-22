@@ -1,18 +1,18 @@
 
-# rn-bugly
+# rn-tencent-im
 
-[![npm version](http://img.shields.io/npm/v/rn-bugly.svg?style=flat-square)](https://npmjs.org/package/rn-bugly "View this project on npm")
-[![npm version](http://img.shields.io/npm/dm/rn-bugly.svg?style=flat-square)](https://npmjs.org/package/rn-bugly "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/rn-tencent-im.svg?style=flat-square)](https://npmjs.org/package/rn-tencent-im "View this project on npm")
+[![npm version](http://img.shields.io/npm/dm/rn-tencent-im.svg?style=flat-square)](https://npmjs.org/package/rn-tencent-im "View this project on npm")
 
 bugly for react-native,支持统计，android支持应用全量升级
 
 ## 安装
 
-> `$ npm install rn-bugly --save`
+> `$ npm install rn-tencent-im --save`
 
 * react-native <0.60
 
-> `$ react-native link rn-bugly`
+> `$ react-native link rn-tencent-im`
 
 * react-native >=0.60
 
@@ -66,60 +66,14 @@ public void onCreate() {
 
   ...
 
-  ** 下面的方法根据情况二选一 **
-
-  //参数解析：
-  //参数1：上下文对象
-  //参数2：注册时申请的APPID
-  //参数3：是否开启debug模式，true表示打开debug模式，false表示关闭调试模式
-
-  //初始化并且自动检查更新
-  RNBuglyModule.init(getApplicationContext(),"注册时申请的APPID",false);
-
-  //仅仅初始化(推荐使用该方法，所有的检查更新触发都在js端，更加灵活)
-  RNBuglyModule.initWithoutAutoCheckUpgrade(getApplicationContext(),"注册时申请的APPID",false);
+ 
 }
 ```
 
 ## 使用
 ```javascript
-import RNBugly from 'rn-bugly';
+import RNBugly from 'rn-tencent-im';
 
-
-//如果上面采用的initWithoutAutoCheckUpgrade初始化，并且需要进入app的时候也自动检查更新，可以使用下面的方法手动检查更新
-//官方原生的init初始化其实有3s的延迟时间，等待初始化完成，所以js端也需要等待3m后才能检查更新
-setTimeout(()=>{
-  RNBugly.checkUpgrade({
-        isManual: false,
-        isSilence: false
-      });
-},3000);
-
-
-
-//点击按钮触发检查更新(一般在[关于]-[检查更新])
-//此时早已初始化了，不需要延时
-RNBugly.checkUpgrade({
-        //该值为true的时候，会有toast提示，如果不需要提示，设置为false
-        isManual: true,
-        isSilence: false
-      });
-
-
-//获取更新信息
-//注意:更新信息获取一次后会储存在本地，即使后台控制停止该版本更新，该方法依旧可以获取到数据
-let updateInfo = await RNBugly.getUpgradeInfo();
-
-
-//上报自定义异常信息
-RNBugly.postException({
-    errorMsg: 'login error',
-    stack: 'sadasdasd\nzxzxsds',
-    extraInfo: {
-        userInfo: 'test',
-        password: '12345'
-    }
-})
 ```
 
 bugly后端异常信息如下：
@@ -161,5 +115,3 @@ https://blog.csdn.net/weixin_34114823/article/details/88037177
   
 ## 截图
 
-<img style="width:300px;object-fit: contain;margin-right: 20px;"  src='https://tva1.sinaimg.cn/large/007S8ZIlgy1gdpp54zj0nj30u01uoqed.jpg' />
-<img style="width:300px;object-fit: contain" src='https://tva1.sinaimg.cn/large/007S8ZIlgy1gdpp5gjhhvj30u01uotej.jpg' />

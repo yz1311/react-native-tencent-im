@@ -1,8 +1,8 @@
 
 {
-  "name": "rn-bugly",
-  "version": "1.1.0",
-  "description": "bugly for react-native,支持统计，android支持全量升级",
+  "name": "rn-tencent-im",
+  "version": "0.0.1-beta.2",
+  "description": "腾讯im for react-native",
   "main": "index.js",
   "types": "./types/index.d.ts",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yz1311/rn-bugly.git"
+    "url": "git+https://github.com/yz1311/rn-tencent-im.git"
   },
   "keywords": [
     "react-native",
@@ -19,9 +19,9 @@
   "author": "yz131",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yz1311/rn-bugly/issues"
+    "url": "https://github.com/yz1311/rn-tencent-im/issues"
   },
-  "homepage": "https://github.com/yz1311/rn-bugly#readme",
+  "homepage": "https://github.com/yz1311/rn-tencent-im#readme",
   "peerDependencies": {
 
   }
